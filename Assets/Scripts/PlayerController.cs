@@ -84,19 +84,19 @@ public class PlayerController : MonoBehaviour
                 anim.SetBool("Attack", true);
                 print("it works3");
             }
-        
+        }
 
 
         if (attackTimeCounter > 0)
         {
             attackTimeCounter -= Time.deltaTime;
         }
-            if (attackTimeCounter <= 0)
-            {
-                attacking = false;
-                anim.SetBool("Attack", false);
-                print("it works4");
-            }
+            
+        if (attackTimeCounter <= 0)
+        {
+            attacking = false;
+            anim.SetBool("Attack", false);
+            print("it works4");
         }
 
         anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
