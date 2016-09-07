@@ -79,7 +79,6 @@ public class PlayerController : MonoBehaviour
                 attacking = true;
                 myRigidbody.velocity = Vector2.zero;
                 anim.SetBool("Attack", true);
-                print("it works3");
             }
         }
 
@@ -93,7 +92,6 @@ public class PlayerController : MonoBehaviour
         {
             attacking = false;
             anim.SetBool("Attack", false);
-            print("it works4");
         }
 
         anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
