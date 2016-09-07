@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CameraController : MonoBehaviour {
 
+    // properties
     public GameObject followTarget;
     private Vector3 targetPos;
     public float moveSpeed;
